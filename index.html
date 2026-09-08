@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>China in Nepal | Retro Devices & Materials</title>
+<style>
+:root{
+  --china:#de2910;
+  --china-dark:#a8180a;
+  --nepal:#003893;
+  --nepal-red:#dc143c;
+  --gold:#ffde00;
+  --ink:#151515;
+  --paper:#f7f2e8;
+  --cream:#fffaf0;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink)}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:4px solid var(--ink)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;text-transform:uppercase;font-size:21px;letter-spacing:-1px}
+.logo span{color:var(--china)}
+.links{display:flex;gap:24px;font-weight:800;font-size:14px}
+.btn{display:inline-block;background:var(--china);color:white;padding:14px 20px;font-weight:900;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+
+.hero{min-height:680px;display:grid;grid-template-columns:1.05fr .95fr;border-bottom:6px solid var(--ink)}
+.hero-copy{padding:100px max(4vw,40px);background:var(--cream);position:relative;overflow:hidden}
+.hero-copy:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:var(--gold);right:-210px;top:-170px;opacity:.9}
+.kicker{position:relative;display:inline-block;background:var(--nepal);color:#fff;padding:8px 13px;font-weight:900;text-transform:uppercase;font-size:12px;letter-spacing:1px}
+h1{position:relative;font-size:clamp(48px,7vw,94px);line-height:.9;letter-spacing:-5px;margin:24px 0}
+h1 em{font-style:normal;color:var(--china)}
+.hero p{position:relative;font-size:18px;line-height:1.6;max-width:570px}
+.hero-actions{position:relative;display:flex;gap:15px;flex-wrap:wrap;margin-top:28px}
+.outline{background:transparent;color:var(--ink)}
+.hero-art{background:var(--china);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:40px}
+.hero-art:after{content:"CHINA → NEPAL";position:absolute;bottom:25px;right:25px;color:var(--gold);font-size:12px;font-weight:900;letter-spacing:2px}
+.product-card{width:min(420px,90%);background:#e8dfc8;border:5px solid var(--ink);box-shadow:14px 14px 0 var(--nepal);transform:rotate(-2deg);padding:20px;position:relative}
+.product-card img{width:100%;height:340px;object-fit:cover;filter:sepia(.55) contrast(1.08) saturate(.75);border:4px solid var(--ink)}
+.product-tag{position:absolute;left:-22px;top:28px;background:var(--gold);border:3px solid var(--ink);padding:10px;font-weight:900}
+.product-card h3{margin:15px 0 0;font-size:24px;text-transform:uppercase}
+
+.strip{background:var(--ink);color:#fff;padding:18px 0;overflow:hidden}
+.stripin{display:flex;gap:45px;white-space:nowrap;font-weight:900;text-transform:uppercase;letter-spacing:1px}
+.strip b{color:var(--gold)}
+
+section{padding:90px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:40px}
+.section-head h2{font-size:clamp(36px,5vw,64px);letter-spacing:-3px;line-height:.95;margin:0;text-transform:uppercase}
+.section-head p{max-width:420px;line-height:1.6}
+
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product{background:#fff;border:4px solid var(--ink);box-shadow:7px 7px 0 var(--ink)}
+.product img{width:100%;height:240px;object-fit:cover;filter:sepia(.45) saturate(.8)}
+.product .info{padding:20px}
+.product h3{margin:0 0 8px;font-size:22px}
+.product small{font-weight:800;color:var(--china)}
+
+.map-section{background:var(--nepal);color:white;border-top:6px solid var(--ink);border-bottom:6px solid var(--ink)}
+.map-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:45px;align-items:center}
+.map-copy h2{font-size:clamp(40px,6vw,72px);line-height:.9;letter-spacing:-3px;margin:0 0 20px;text-transform:uppercase}
+.map-box{background:#f6ecd8;border:5px solid var(--ink);padding:25px;box-shadow:12px 12px 0 var(--china);color:var(--ink)}
+.map-box svg{width:100%;height:auto}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;font-weight:900;margin-top:10px}
+.dot{width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:6px;border:2px solid var(--ink)}
+.red{background:var(--china)} .blue{background:var(--nepal)} .yellow{background:var(--gold)}
+
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{padding:28px;background:#fff;border:4px solid var(--ink)}
+.num{font-size:50px;font-weight:900;color:var(--china);line-height:1}
+.step h3{font-size:24px;margin:12px 0}
+
+.cta{background:var(--china);color:#fff;text-align:center;border-top:6px solid var(--ink)}
+.cta h2{font-size:clamp(42px,6vw,76px);line-height:.95;letter-spacing:-3px;margin:0 0 20px;text-transform:uppercase}
+footer{background:var(--ink);color:#fff;padding:50px 0}
+.footer{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.footer strong{font-size:22px}
+.note{color:#bbb;font-size:13px;max-width:450px}
+
+@media(max-width:800px){
+ .links{display:none}
+ .hero,.map-grid{grid-template-columns:1fr}
+ .hero-copy{padding:70px 7%}
+ .hero-art{min-height:500px}
+ .products,.how{grid-template-columns:1fr}
+ .section-head{display:block}
+}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="container navin">
+  <div class="logo">CHINA <span>IN</span> NEPAL</div>
+  <div class="links"><a href="#products">Products</a><a href="#journey">China in Nepal</a><a href="#how">How it Works</a></div>
+  <a class="btn" href="#contact">Explore</a>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="hero-copy">
+  <div class="kicker">Retro • Curious • Imported</div>
+  <h1>OLD TECH.<br><em>NEW STORY.</em></h1>
+  <p>China in Nepal brings interesting retro devices, nostalgic materials and uncommon finds from China to Nepal — displayed, explained and marketed through one growing platform.</p>
+  <div class="hero-actions">
+   <a class="btn" href="#products">SEE PRODUCTS</a>
+   <a class="btn outline" href="#journey">OUR JOURNEY ↓</a>
+  </div>
+ </div>
+ <div class="hero-art">
+  <div class="product-card">
+   <div class="product-tag">FEATURED FIND</div>
+   <!-- Replace this Unsplash image with your own product photo -->
+   <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Retro device">
+   <h3>Vintage Technology Collection</h3>
+  </div>
+ </div>
+</header>
+
+<div class="strip"><div class="container stripin">
+ <span>FROM <b>CHINA</b> TO <b>NEPAL</b></span><span>RETRO DEVICES</span><span>UNIQUE MATERIALS</span><span>DISCOVER • DISPLAY • MARKET</span>
+</div></div>
+
+<section id="products">
+ <div class="container">
+  <div class="section-head">
+   <h2>Things with<br>character.</h2>
+   <p>We are building a collection of interesting products that feel different from ordinary modern retail.</p>
+  </div>
+  <div class="products">
+   <article class="product">
+    <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=900&q=80" alt="Retro electronics">
+    <div class="info"><small>01 / RETRO TECH</small><h3>Classic Devices</h3><p>Old-school electronics and memorable technology.</p></div>
+   </article>
+   <article class="product">
+    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80" alt="Vintage objects">
+    <div class="info"><small>02 / MATERIAL</small><h3>Interesting Finds</h3><p>Unusual materials, objects and practical discoveries.</p></div>
+   </article>
+   <article class="product">
+    <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=80" alt="Vintage collection">
+    <div class="info"><small>03 / CULTURE</small><h3>Stories & Displays</h3><p>Products presented with context, history and personality.</p></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="journey" class="map-section">
+ <div class="container map-grid">
+  <div class="map-copy">
+   <div class="kicker">THE CONNECTION</div>
+   <h2>CHINA<br>IN NEPAL.</h2>
+   <p>Our platform connects discoveries from across China with curious people and markets in Nepal. The map is designed as part of the brand identity — not just a location widget.</p>
+  </div>
+  <div class="map-box">
+   <!-- Stylized China-to-Nepal connection map -->
+   <svg viewBox="0 0 760 420" aria-label="Stylized map connecting China and Nepal">
+    <rect width="760" height="420" fill="#f6ecd8"/>
+    <g opacity=".25" stroke="#003893" stroke-width="1">
+      <path d="M0 70H760M0 140H760M0 210H760M0 280H760M0 350H760"/>
+      <path d="M100 0V420M200 0V420M300 0V420M400 0V420M500 0V420M600 0V420M700 0V420"/>
+    </g>
+    <!-- abstract China silhouette -->
+    <path d="M110 120 L170 85 230 105 280 72 350 95 420 75 510 125 570 110 630 155 595 205 530 215 475 250 400 225 335 260 275 230 205 245 145 210 80 175Z" fill="#de2910" stroke="#151515" stroke-width="6"/>
+    <text x="335" y="165" text-anchor="middle" font-size="28" font-weight="900" fill="#ffde00">CHINA</text>
+    <!-- Nepal-inspired long narrow silhouette -->
+    <path d="M220 310 C275 278 320 322 375 294 C430 266 485 318 555 290 C520 335 470 350 420 343 C365 372 300 347 220 355Z" fill="#003893" stroke="#151515" stroke-width="6"/>
+    <text x="390" y="330" text-anchor="middle" font-size="20" font-weight="900" fill="#fff">NEPAL</text>
+    <path d="M365 220 C430 235 455 255 445 286" fill="none" stroke="#ffde00" stroke-width="8" stroke-dasharray="12 10"/>
+    <circle cx="365" cy="220" r="11" fill="#de2910" stroke="#151515" stroke-width="4"/>
+    <circle cx="445" cy="286" r="11" fill="#ffde00" stroke="#151515" stroke-width="4"/>
+   </svg>
+   <div class="legend"><span><i class="dot red"></i>China source</span><span><i class="dot blue"></i>Nepal platform</span><span><i class="dot yellow"></i>Discovery route</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="how">
+ <div class="container">
+  <div class="section-head"><h2>Simple.<br>Growing.</h2><p>A straightforward model for discovering and introducing interesting products.</p></div>
+  <div class="how">
+   <div class="step"><div class="num">01</div><h3>Discover</h3><p>We look for retro devices and materials with a story, usefulness or nostalgic value.</p></div>
+   <div class="step"><div class="num">02</div><h3>Display</h3><p>We showcase products clearly so people can understand what makes them interesting.</p></div>
+   <div class="step"><div class="num">03</div><h3>Market</h3><p>We build awareness and connect products with the right audience in Nepal.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="cta">
+ <div class="container">
+  <h2>LET'S FIND<br>SOMETHING DIFFERENT.</h2>
+  <p>China in Nepal is growing. Follow the journey and discover what comes next.</p>
+  <a class="btn outline" style="background:#fff;color:#151515" href="mailto:hello@chinainnepal.com">CONTACT US</a>
+ </div>
+</section>
+
+<footer>
+ <div class="container footer">
+  <div><strong>CHINA IN NEPAL</strong><p>Retro devices. Interesting materials. New stories.</p></div>
+  <p class="note">© 2026 China in Nepal. A growing platform connecting discoveries from China with audiences in Nepal.</p>
+ </div>
+</footer>
+
+</body>
+</html>
